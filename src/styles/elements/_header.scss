@@ -1,0 +1,126 @@
+.header {
+  font-family: 'Montserrat', sans-serif;
+  &-row {
+    margin-top: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+  }
+  &-logo {
+    @include only-size(163px, 51px);
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+    }
+  }
+  &-menu {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      &:not(&:last-child) {
+        @media (min-width: 992px) {
+          margin-right: 76px;
+        }
+        @media (max-width: 991px) {
+          margin-right: 20px;
+        }
+      }
+    }
+    &-link {
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #ffffff !important;
+      position: relative;
+      text-decoration: none !important;
+      &:after {
+        transition: width 0.3s 0s ease-in-out, opacity 0.1s 0s ease-in-out;
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+      }
+      &:hover:after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+    &-button {
+      border: 1px solid #FFFFFF;
+      padding: 18px 49px;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      background-color: rgba(0,0,0,0);
+      border-radius: 30px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: block;
+      transition: background-color 0.3s 0s ease-in-out, color 0.1s 0s ease-in-out, transform 0.2s 0s ease-in-out;
+      @media (min-width: 992px) {
+        @include only-size(181px, 55px);
+      }
+      @media (max-width: 991px) {
+        padding: 10px 28px;
+        font-size: 12px;
+        @include only-size(140px, 51px);
+      }
+      @media (max-width: 767px) {
+        position: fixed;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+        @include only-size(100%, 51px);
+        background-color: #FFFFFF;
+        color: #000000;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0;
+        z-index: 1001;
+      }
+      &:hover {
+        @media (min-width: 768px) {
+          background-color: #FFFFFF;
+          color: #000000;
+        }
+        @media (max-width: 767px) {
+          background-color: #000000;
+          border-color: #000000;
+          color: #FFFFFF;
+          transform: scale(1.5) translateY(-5px);
+        }
+      }
+      &--desktop {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &--mobile {
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

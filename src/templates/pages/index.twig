@@ -1,0 +1,167 @@
+{% extends '../layouts/default.twig' %}
+{% set head_title = 'Главная' %}
+{% set body_class = 'page' %}
+
+{% block page %}
+  <div class="page">
+    <div class="container">
+      <div class="page-index-header">
+        <div class="page-index-header-title">
+          <span>Продакшн-студия полного цикла</span>
+          <span>Разработка креативных решений</span>
+        </div>
+        <div class="page-index-header-text">Мы&nbsp;&mdash; креативный продакшн полного цикла с&nbsp;творческой командой производства
+          <a href="javascript:;">фото</a> и&nbsp;<a href="javascript:;">видео</a> контента и&nbsp;<a href="javascript:;">сложной графики</a>.
+        </div>
+        <button class="page-index-header-down" type="button">
+          <img src="../../assets/img/arrow.svg" alt="">
+        </button>
+      </div>
+      <div class="page-blog">
+        <div class="row page-blog-item--row">
+          <div class="col col-12 col-md-8">
+            <a href="/" class="page-blog-item">
+              <span class="page-blog-image-overlay">
+                <img src="../../assets/img/blog-image-1.png" class="page-blog-image" />
+              </span>
+              <span class="page-blog-text">Название нашей работы</span>
+            </a>
+          </div>
+          <div class="col col-12 col-md-4">
+            <a href="/" class="page-blog-item">
+              <span class="page-blog-image-overlay">
+                <img src="../../assets/img/blog-image-2.png" class="page-blog-image" />
+              </span>
+              <span class="page-blog-text">Название нашей работы</span>
+            </a>
+          </div>
+        </div>
+        <div class="row page-blog-item--row">
+          <div class="col col-12">
+            <a href="/" class="page-blog-item">
+              <span class="page-blog-image-overlay">
+                <img src="../../assets/img/blog-image-3.png" class="page-blog-image" />
+              </span>
+              <span class="page-blog-text">Название нашей работы</span>
+            </a>
+          </div>
+        </div>
+        <div class="row page-blog-item--row">
+          <div class="col col-12 col-md-4">
+            <a href="/" class="page-blog-item">
+              <span class="page-blog-image-overlay">
+                <img src="../../assets/img/blog-image-4.png" class="page-blog-image" />
+              </span>
+              <span class="page-blog-text">Название нашей работы</span>
+            </a>
+          </div>
+          <div class="col col-12 col-md-4">
+            <a href="/" class="page-blog-item">
+              <span class="page-blog-image-overlay">
+                <img src="../../assets/img/blog-image-5.png" class="page-blog-image" />
+              </span>
+              <span class="page-blog-text">Название нашей работы</span>
+            </a>
+          </div>
+          <div class="col col-12 col-md-4">
+            <a href="/" class="page-blog-item">
+              <span class="page-blog-image-overlay">
+                <img src="../../assets/img/blog-image-6.png" class="page-blog-image" />
+              </span>
+              <span class="page-blog-text">Название нашей работы</span>
+            </a>
+          </div>
+        </div>
+        <div class="page-blog-more">
+          <a class="page-blog-more-link">
+            <span class="page-blog-more-link--text">Больше</span>
+            <img src="../../assets/img/blog-arrow.svg" class="page-blog-more-link--icon" />
+          </a>
+        </div>
+      </div>
+      <div class="page-promo-header">Мы&nbsp;решаем <b>задачи бизнеса</b>. Если ваша задача звучит как вызов, это к&nbsp;нам!</div>
+      <div class="page-promo-menus">
+        <ul class="page-promo-menu">
+          <li class="page-promo-item--header">Видео</li>
+          <li class="page-promo-item"><a href="/">Рекламные ролики</a></li>
+          <li class="page-promo-item"><a href="/">Контент для социальных сетей</a></li>
+          <li class="page-promo-item"><a href="/">Презентационные ролики</a></li>
+          <li class="page-promo-item"><a href="/">Корпоративные ролики</a></li>
+          <li class="page-promo-item"><a href="/">Клипы</a></li>
+        </ul>
+        <ul class="page-promo-menu">
+          <li class="page-promo-item--header">Фото</li>
+          <li class="page-promo-item"><a href="/">Рекламные фото</a></li>
+          <li class="page-promo-item"><a href="/">Социальные сети</a></li>
+          <li class="page-promo-item"><a href="/">Студийная съемка</a></li>
+          <li class="page-promo-item"><a href="/">Мероприятия</a></li>
+          <li class="page-promo-item"><a href="/">Интерьер</a></li>
+        </ul>
+        <ul class="page-promo-menu">
+          <li class="page-promo-item--header">3D графика</li>
+          <li class="page-promo-item"><a href="/">Промо ролики</a></li>
+          <li class="page-promo-item"><a href="/">3D визуализация</a></li>
+          <li class="page-promo-item"><a href="/">Motion дизайн</a></li>
+          <li class="page-promo-item"><a href="/">Пост продакшен</a></li>
+          <li class="page-promo-item"><a href="/">Контент для Digital</a></li>
+        </ul>
+      </div>
+      <div class="page-promo-publish">
+        <div class="page-promo-publish-header">Публикации и статьи</div>
+        <div class="page-promo-publish-items">
+          <a href="/" class="page-promo-publish-item">
+            <span class="page-promo-publish-item-header">Как мы создавали бренд Name</span>
+            <span class="page-promo-publish-item-text">Подзаголовок новости в одну строку</span>
+          </a>
+          <a href="/" class="page-promo-publish-item">
+            <span class="page-promo-publish-item-header">Name - как стать сделать лучше</span>
+            <span class="page-promo-publish-item-text">Для ребят их GQ</span>
+          </a>
+          <a href="/" class="page-promo-publish-item">
+            <span class="page-promo-publish-item-header">Уникальный контент</span>
+            <span class="page-promo-publish-item-text">Для Safisa</span>
+          </a>
+        </div>
+      </div>
+      <div class="page-map">
+        <div class="page-map-block">
+          <div class="page-map-block-header">
+            <div class="page-map-block-header-text">Свяжитесь с&nbsp;нами чтобы получить ответы на&nbsp;все вопросы</div>
+            <button class="page-map-block-header-down" type="button">
+              <img src="../../assets/img/arrow.svg" alt="">
+            </button>
+          </div>
+          <div class="page-map-body">
+            <div class="page-map-address">Москва,<br> Тверская улица, 17</div>
+            <div class="page-map-phones">
+              <span>8 (800) 317&minus;21&minus;11</span>
+              <span>с&nbsp;10:00 до&nbsp;23:00</span>
+            </div>
+          </div>
+          <div class="page-map-socials">
+            <a class="page-map-socials-item" href="/">
+              <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.49168 3.622V11H1.52868V3.622H0.49168ZM0.45768 1.667H1.56268V0.289999H0.45768V1.667ZM9.41097 5.917C9.41097 5.407 9.27497 4.965 9.01997 4.591C9.37697 4.387 9.97197 4.234 10.533 4.234V3.231C9.75097 3.231 9.10497 3.639 8.71397 4.234C8.18697 3.707 7.37097 3.418 6.41897 3.418C4.68497 3.418 3.44397 4.37 3.44397 5.917C3.44397 6.733 3.78397 7.396 4.36197 7.821C3.76697 8.127 3.32497 8.552 3.32497 9.181C3.32497 9.725 3.59697 10.184 4.27697 10.388C3.34197 10.592 2.71297 11.153 2.71297 12.054C2.71297 13.414 4.32797 14.094 6.28297 14.094C8.44197 14.094 10.431 13.414 10.431 11.595C10.431 10.456 9.59797 9.64 8.01697 9.64H5.16097C4.44697 9.64 4.19197 9.402 4.19197 8.943C4.19197 8.552 4.49797 8.246 4.80397 8.093C5.26297 8.314 5.80697 8.416 6.41897 8.416C8.15297 8.416 9.41097 7.464 9.41097 5.917ZM3.76697 11.799C3.76697 10.847 4.54897 10.558 5.44997 10.558H7.77897C8.76497 10.558 9.42797 10.847 9.42797 11.629C9.42797 12.904 8.11897 13.346 6.28297 13.346C4.80397 13.346 3.76697 12.887 3.76697 11.799ZM8.35697 5.934C8.35697 7.056 7.64297 7.719 6.41897 7.719C5.22897 7.719 4.51497 7.056 4.51497 5.934C4.51497 4.795 5.22897 4.132 6.41897 4.132C7.64297 4.132 8.35697 4.795 8.35697 5.934Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="page-map-socials-item" href="/">
+              <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.51088 11L7.63888 3.622H6.61888L4.18788 9.606H4.11988L1.63788 3.622H0.549883L3.67788 11H4.51088ZM9.85778 8.229L11.0138 7.26L14.1928 11H15.4508L11.7788 6.682L15.2808 3.622H13.9208L9.85778 7.192V0.289999H8.82078V11H9.85778V8.229Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="page-map-socials-item page-map-socials-item--tg" href="/">
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.30869 8.368C1.30869 9.711 1.93769 10.204 2.92369 10.204C3.67169 10.204 4.19869 10 4.72569 9.592V8.861C4.30069 9.116 3.79069 9.371 3.28069 9.371C2.60069 9.371 2.32869 9.048 2.32869 8.385V3.387H4.47069V2.622H2.32869V0.565H1.80169L1.58069 1.619C1.42769 2.333 1.29169 2.656 0.611691 2.792L0.169691 2.877V3.387H1.30869V8.368ZM11.849 4.917C11.849 4.407 11.713 3.965 11.458 3.591C11.815 3.387 12.41 3.234 12.971 3.234V2.231C12.189 2.231 11.543 2.639 11.152 3.234C10.625 2.707 9.80896 2.418 8.85696 2.418C7.12296 2.418 5.88196 3.37 5.88196 4.917C5.88196 5.733 6.22196 6.396 6.79996 6.821C6.20496 7.127 5.76296 7.552 5.76296 8.181C5.76296 8.725 6.03496 9.184 6.71496 9.388C5.77996 9.592 5.15096 10.153 5.15096 11.054C5.15096 12.414 6.76596 13.094 8.72096 13.094C10.88 13.094 12.869 12.414 12.869 10.595C12.869 9.456 12.036 8.64 10.455 8.64H7.59896C6.88496 8.64 6.62996 8.402 6.62996 7.943C6.62996 7.552 6.93596 7.246 7.24196 7.093C7.70096 7.314 8.24496 7.416 8.85696 7.416C10.591 7.416 11.849 6.464 11.849 4.917ZM6.20496 10.799C6.20496 9.847 6.98696 9.558 7.88796 9.558H10.217C11.203 9.558 11.866 9.847 11.866 10.629C11.866 11.904 10.557 12.346 8.72096 12.346C7.24196 12.346 6.20496 11.887 6.20496 10.799ZM10.795 4.934C10.795 6.056 10.081 6.719 8.85696 6.719C7.66696 6.719 6.95296 6.056 6.95296 4.934C6.95296 3.795 7.66696 3.132 8.85696 3.132C10.081 3.132 10.795 3.795 10.795 4.934Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="page-map-socials-item" href="/">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.0396 7.056C1.0396 5.288 2.1956 4.268 3.6576 4.268C5.2216 4.268 6.1226 5.441 6.1226 7.311C6.1226 9.181 5.2216 10.354 3.6576 10.354C2.1956 10.354 1.0396 9.334 1.0396 7.566V7.056ZM1.0736 9.385C1.3966 10.32 2.3656 11.204 3.7936 11.204C5.9866 11.204 7.2106 9.487 7.2106 7.311C7.2106 5.135 5.9866 3.418 3.7936 3.418C2.3656 3.418 1.3966 4.319 1.0736 5.254V0.289999H0.0366016V11H0.818602L1.0736 9.385ZM14.5482 8.365C14.2422 9.674 13.4092 10.354 12.0492 10.354C10.5872 10.354 9.44823 9.198 9.38023 7.566H15.4492V7.09C15.4492 5.084 14.2932 3.418 11.9812 3.418C9.89023 3.418 8.30923 5.084 8.30923 7.413C8.30923 9.691 9.90723 11.204 12.0492 11.204C13.8512 11.204 15.0752 10.167 15.4322 8.484L14.5482 8.365ZM9.39723 6.835C9.56723 5.458 10.5192 4.234 11.9812 4.234C13.5452 4.234 14.3102 5.475 14.3442 6.835H9.39723Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
