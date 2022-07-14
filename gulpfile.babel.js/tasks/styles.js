@@ -47,4 +47,4 @@ export function stylelint() {
     }));
 }
 
-export const styles = series(stylelint, scss);
+export const styles = series(scss);
